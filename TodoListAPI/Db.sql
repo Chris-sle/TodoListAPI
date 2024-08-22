@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Todo](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Text] [nvarchar](max) NOT NULL,
+	[Done] [date] NULL,
+ CONSTRAINT [PK_Todo] PRIMARY KEY CLUSTERED
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+INSERT [dbo].[Todo] ([Id], [Text], [Done]) VALUES (N'1c5a7312-7422-4420-86d0-676ec54dec81', N'clean house', NULL) 
