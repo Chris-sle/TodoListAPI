@@ -63,5 +63,5 @@ app.MapDelete("/todo/{id}", async (Guid id) =>
 });
 
 app.UseStaticFiles();
-app.MapFallbackToFile("/Todo-app/public/index.html");    
+app.MapFallbackToFile("/index.html");    
 app.Run();
